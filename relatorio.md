@@ -56,8 +56,6 @@ Matriz de confusão (teste, 61 pacientes):
 | **Real: sem doença** | VN = 27 | FP = 6 |
 | **Real: com doença** | FN = 2 | VP = 26 |
 
-![Matriz de confusão](figuras/t2_matriz_confusao.png)
-![Curva ROC](figuras/t2_curva_roc.png)
 
 **Interpretação.**
 - O modelo acerta 86,9% dos pacientes do teste. A **AUC de 0,951** é "excelente" na escala dos slides (0,9 a 1,0): em 95% dos pares paciente doente/saudável, o modelo atribui probabilidade maior ao doente.
