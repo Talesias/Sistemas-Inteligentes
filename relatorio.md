@@ -62,7 +62,7 @@ Validação cruzada estratificada de 5 folds **sobre o treino**, para profundida
 
 ## 5. Tarefa 5 — Interpretação do modelo (Gini, profundidade 7)
 
-A árvore final tem profundidade 7, **59 folhas e 117 nós**. A figura mostra os 4 primeiros níveis (a árvore completa está em [`arvore_texto.txt`](arvore_texto.txt)).
+A árvore final tem profundidade 7, **59 folhas e 117 nós**. 
 
 
 **Os três atributos mais determinantes** (importância somada das dummies de cada atributo original):
@@ -98,7 +98,6 @@ Acurácia: **0,680**. Matriz de confusão (200 clientes, linhas = real):
 | **Real: bom** (140) | 110 | FP = 30 |
 | **Real: mau** (60) | **FN = 34** | 26 |
 
-![Matriz de confusão](figuras/t6_matriz_confusao.png)
 
 | Classe | Precisão | Recall | F1-score | Amostras |
 |---|---:|---:|---:|---:|
