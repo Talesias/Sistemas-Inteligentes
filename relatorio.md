@@ -10,7 +10,7 @@
 - **Codificação:** **sim, é necessária.** O `DecisionTreeClassifier` do scikit-learn só aceita números, e os códigos A11, A12… são rótulos de categoria, não quantidades. Usei **one-hot encoding** nos 13 atributos categóricos (e não ordinal), porque vários não têm uma ordem real (por exemplo, `finalidade`) e, mesmo nos que têm, existe uma categoria "desconhecido/sem conta" (A14, A65) que quebraria a ordem. O resultado são 54 colunas binárias + 7 numéricas = **61 variáveis de entrada**. O efeito colateral é que cada corte da árvore testa uma única categoria por vez.
 - **Balanceamento:** 700 bons (70%) e 300 maus (30%).
 
-![Balanceamento](figuras/t1_distribuicao_classes.png)
+
 
 **Impacto do desbalanceamento sobre a acurácia.** Um classificador que **aprova todos os clientes** acerta 70% sem aprender nada, mas tem recall de 0% para o mau pagador e, pela matriz de custo do `german.doc` (aprovar um mau custa 5; recusar um bom custa 1), custo de 1.500 no dataset inteiro. Portanto, **70% é a acurácia mínima a superar** e a acurácia sozinha não mede o que importa aqui. Devem-se olhar o recall e a precisão da classe "mau" e o custo.
 
