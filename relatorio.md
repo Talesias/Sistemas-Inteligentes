@@ -34,7 +34,6 @@ Coeficientes (variáveis padronizadas; `exp(coef)` é a razão de chances para +
 | oldpeak | +0,150 | 1,16 |
 | age | −0,104 | 0,90 |
 
-![Coeficientes](figuras/t2_coeficientes.png)
 
 O número de vasos coronários com obstrução (`ca`) é o fator de maior peso, seguido de `thal`, `sex` e `cp`. Quanto maior a frequência cardíaca máxima atingida (`thalach`), menor o risco. A idade tem coeficiente próximo de zero e negativo, o que não deve ser lido como "idade protege": isoladamente ela se correlaciona positivamente com a doença (r = +0,22), mas também com `ca` (+0,36), `trestbps` (+0,28) e `thalach` (−0,39), e esse efeito é absorvido por essas variáveis no modelo múltiplo. Os coeficientes de `cp`, `restecg`, `slope` e `thal` devem ser lidos com cautela: são códigos de categorias tratados como números (ver análise C2).
 
