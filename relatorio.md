@@ -89,7 +89,7 @@ k-Means (`init='k-means++'`, `n_init=10`, `random_state=42`) para k = 2 a 10:
 | 9 | 973,1 | 5,4% | 0,197 |
 | 10 | 932,0 | 4,2% | 0,191 |
 
-**Escolha: k = 3.**
+**Escolhendo: k = 3.**
 - **Cotovelo:** a curva de inércia é suave, **sem cotovelo nítido**. A maior queda relativa ocorre ao passar de 2 para 3 grupos (15,8%) e depois ela diminui devagar (10,7%, 8,7%, 7,2%…). Uma medida objetiva (distância à reta que liga o primeiro e o último ponto) tem máximo em k = 5, mas quase igual para k = 3 a 5 (0,14; 0,18; 0,18), ou seja, não discrimina bem.
 - **Silhueta:** o máximo é em **k = 2 (0,290)**, seguido de **k = 3 (0,259)**. De k = 4 em diante ela cai para cerca de **0,19 a 0,20**. Isso desencoraja k ≥ 4. Mesmo o melhor valor (0,29) indica estrutura **fraca**: os dados formam mais um contínuo do que grupos bem separados (ver PCA, Tarefa 5).
 - **Interpretabilidade comercial:** k = 2 se aproxima bastante da divisão Horeca × Retail (ARI 0,51), que a empresa já conhece (o canal está cadastrado), então acrescenta pouca informação nova. k = 3 revela **três perfis distintos e acionáveis** (seção 6), inclusive um grupo de grandes compradores multicategoria que o canal não captura. k = 4 divide o perfil de restaurante por volume, mas com silhueta de 0,19.
